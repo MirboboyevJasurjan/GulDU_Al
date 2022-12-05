@@ -116,7 +116,7 @@ main{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
 }
 .newsContainer .row{
   display: flex;
@@ -241,5 +241,58 @@ main{
 }
 
 
+/* Home - ways */
 
 
+#ways{
+  width: 100%;
+  background-color: rgb(239, 247, 246);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#ways .sectTitle{
+  color: #50514f;
+  margin-bottom: 5px;
+}
+#ways > * {
+  margin: 10px 0;
+}
+.ways__ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.ways__link{
+  position: relative;
+  color: #a0a0a0 !important;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.ways__link:after {
+  content: "";
+  position: absolute;
+  background-color: #a0a0a0;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+.ways__link:hover {
+  color: #ffffff;
+  bottom: 1px;
+  left: 1px;
+}
+.ways__link:hover:after {
+  width: 100%;
+}
